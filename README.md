@@ -12,23 +12,27 @@ A modern personal portfolio website built with React and Vite.
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (version 16 or higher)
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/riosjmo/portfolio.git
 cd portfolio
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -45,12 +49,14 @@ npm run dev
 ## Deployment
 
 The site can be easily deployed to platforms like:
+
 - Vercel
-- Netlify  
+- Netlify
 - GitHub Pages
 - Any static hosting service
 
 To build for production:
+
 ```bash
 npm run build
 ```
