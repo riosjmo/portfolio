@@ -1,8 +1,16 @@
+/* Import Custom Font */
+@import url("../../vendor/fonts/bariol-bold-webfont/style.css");
+
 /* Global CSS Reset - Remove default browser margins/padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Bariol Bold", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -12,19 +20,21 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-family: "Bariol Bold", Arial, sans-serif;
+  scrollbar-width: none;
 }
 
 body {
-  background: linear-gradient(135deg, #050813 0%, #8a3030 100%);
-  background-attachment: fixed;
+  background: url("../../assets/stars.jpg") center center no-repeat fixed;
+  background-size: 120%; /* Zooms out to show more of the image */
 }
 
 /* Basic Portfolio Layout Styles */
 .app {
   min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(135deg, #050813 0%, #8a3030 100%);
-  background-attachment: fixed;
+  background: url("../../assets/stars.jpg") center center no-repeat fixed;
+  background-size: 120%; /* Zooms out to show more of the image */
 }
 
 /* Common Section Styles */
@@ -32,10 +42,29 @@ section {
   padding: 5rem 0;
   color: white;
   text-align: center;
+  font-family: "Bariol Bold", Arial, sans-serif;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Ensure font applies to all text elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div,
+button,
+input,
+textarea,
+label {
+  font-family: "Bariol Bold", Arial, sans-serif;
 }
