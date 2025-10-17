@@ -61,6 +61,42 @@
   }
 }
 
+/* Right side star decoration */
+.rope-star-left {
+  right: calc(6% + 97px);
+  left: auto;
+  transform: rotate(-8deg);
+  height: calc(55vh + 80px + 67px);
+}
+
+.rope-star-right {
+  right: calc(6% + 24px);
+  left: auto;
+  transform: rotate(8deg);
+  height: calc(55vh + 80px + 74px);
+}
+
+.hanging-star {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  right: 5.8%;
+  top: calc(55vh + 80px + 10px);
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 0, 0.4));
+  animation: gentle-sway-reverse 4.5s ease-in-out infinite;
+}
+
+@keyframes gentle-sway-reverse {
+  0%,
+  100% {
+    transform: rotate(2deg) translateX(0px);
+  }
+  50% {
+    transform: rotate(-2deg) translateX(-3px);
+  }
+}
+
 .hero-content {
   display: flex;
   align-items: center;

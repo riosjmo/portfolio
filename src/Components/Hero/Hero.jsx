@@ -2,6 +2,7 @@ import "./Hero.css";
 import author from "../../assets/author.jpg";
 import moon from "../../assets/moon.png";
 import rope from "../../assets/rope.png";
+import star from "../../assets/star.png";
 
 const Hero = () => {
   const handleScrollToAbout = (e) => {
@@ -22,6 +23,11 @@ const Hero = () => {
         <img src={rope} alt="" className="rope rope-left" />
         <img src={rope} alt="" className="rope rope-right" />
         <img src={moon} alt="Moon" className="hanging-moon" />
+        
+        {/* Right side star decoration */}
+        <img src={rope} alt="" className="rope rope-star-left" />
+        <img src={rope} alt="" className="rope rope-star-right" />
+        <img src={star} alt="Star" className="hanging-star" />
       </div>
       
       <div className="hero-content">
