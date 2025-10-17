@@ -46,7 +46,7 @@ const Header = () => {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <h1 className="nav-logo">Rio Morales</h1>
+          <h1 className="nav-logo"></h1>
         </div>
       </nav>
 
