@@ -108,30 +108,40 @@
   height: 150px;
   background: #dcc1f8;
   z-index: 5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
 }
 .layer-2 {
   width: 220px;
   height: 220px;
   background: #cea7f8;
   z-index: 4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18),
+    inset 0 2px 4px rgba(255, 255, 255, 0.15);
 }
 .layer-3 {
   width: 290px;
   height: 290px;
   background: #ae9cf5;
   z-index: 3;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 .layer-4 {
   width: 360px;
   height: 360px;
   background: #9d7ff7;
   z-index: 2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22),
+    inset 0 2px 4px rgba(255, 255, 255, 0.08);
 }
 .layer-5 {
   width: 430px;
   height: 430px;
   background: #8b5cf6;
   z-index: 1;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25),
+    inset 0 2px 4px rgba(255, 255, 255, 0.05);
 }
 
 /* ===== Active State ===== */
