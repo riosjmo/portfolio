@@ -1,12 +1,11 @@
 /* Import Custom Font */
-@import url("../../vendor/fonts/bariol-bold-webfont/style.css");
+@import url("../../vendor/fonts/style.css");
 
 /* Global CSS Reset - Remove default browser margins/padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bariol Bold", Arial, sans-serif;
 }
 
 html {
@@ -20,7 +19,6 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: "Bariol Bold", Arial, sans-serif;
   scrollbar-width: none;
 }
 
@@ -42,7 +40,6 @@ section {
   padding: 5rem 0;
   color: white;
   text-align: center;
-  font-family: "Bariol Bold", Arial, sans-serif;
 }
 
 .container {
@@ -66,5 +63,4 @@ button,
 input,
 textarea,
 label {
-  font-family: "Bariol Bold", Arial, sans-serif;
 }

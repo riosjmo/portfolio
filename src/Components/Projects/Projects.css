@@ -1,0 +1,202 @@
+/* Projects Section */
+.projects {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+}
+
+.projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: rgb(221, 128, 224);
+  font-weight: bold;
+}
+
+/* Projects Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Third project centered in second row */
+.project-card:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 350px;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(221, 128, 224, 0.3);
+}
+
+/* Project Image (Top Half) */
+.project-image {
+  height: 50%;
+  overflow: hidden;
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+/* Placeholder for missing images */
+.project-image::before {
+  content: "Project Screenshot";
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Project Content (Bottom Half) */
+.project-content {
+  height: 50%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(221, 128, 224);
+  font-weight: bold;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  flex-grow: 1;
+}
+
+/* Technology Tags */
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background: rgba(221, 128, 224, 0.2);
+  color: rgb(221, 128, 224);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(221, 128, 224, 0.3);
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1;
+}
+
+.btn-primary {
+  background: rgb(221, 128, 224);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: rgb(200, 100, 200);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: rgb(221, 128, 224);
+  border: 2px solid rgb(221, 128, 224);
+}
+
+.btn-secondary:hover {
+  background: rgb(221, 128, 224);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 350px;
+  }
+
+  .project-card:nth-child(3) {
+    grid-column: 1;
+    max-width: none;
+  }
+
+  .projects h2 {
+    font-size: 2.5rem;
+  }
+
+  .project-card {
+    height: 450px;
+  }
+
+  .project-content {
+    padding: 1.25rem;
+  }
+}

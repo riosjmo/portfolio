@@ -1,3 +1,6 @@
+/* fonts */
+@import "D:\projects\portfolio\src\vendor\fonts\style.css"; 
+
 /* Global smooth scrolling */
 html {
   scroll-behavior: smooth;

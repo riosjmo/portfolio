@@ -1,0 +1,49 @@
+.about__title {
+  font-family: "Enwallowify Regular", sans-serif;
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+  color: #dcc1f8;
+}
+
+.about__text {
+  font-family: "Enwallowify Regular", sans-serif;
+  font-size: 20px;
+}
+
+.about__text-1 {
+  margin-bottom: 10px;
+}
+
+.about__text-2 {
+  margin-bottom: 5px;
+}
+
+.about-details {
+  margin-top: 10px;
+  text-align: left;
+  display: inline-block;
+}
+
+.about__location {
+    margin-bottom: 5px;
+}
+
+.about__education {
+    margin-bottom: 5px;
+}
+
+.about__experience {
+    margin-bottom: 5px;
+}
+
+.about__location-title {
+  color: #dcc1f8;
+}
+
+.about__education-title {
+  color: #dcc1f8;
+}
+
+.about__experience-title {
+  color: #dcc1f8;
+}

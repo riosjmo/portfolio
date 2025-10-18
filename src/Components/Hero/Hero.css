@@ -134,6 +134,7 @@
   position: relative;
   bottom: 130px;
   right: 70px;
+  font-family: "Bariol Bold", Arial, sans-serif;
 }
 
 .hero__title-line1 {
@@ -148,6 +149,7 @@
   right: 70px;
   width: 600px;
   color: rgb(221, 128, 224);
+  font-family: "Bariol Bold", Arial, sans-serif;
 }
 
 .hero__content p {
@@ -167,6 +169,7 @@
   position: relative;
   bottom: 100px;
   right: 70px;
+  font-family: "Bariol Bold", Arial, sans-serif;
 }
 
 .cta-button:hover {

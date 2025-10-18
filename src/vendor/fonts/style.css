@@ -6,3 +6,10 @@
     font-weight: normal;
     src: local('Bariol Bold'), url('Bariol_Bold.woff') format('woff');
     }
+
+    @font-face {
+    font-family: 'Enwallowify Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Enwallowify Regular'), url('Enwallowify-Regular.woff') format('woff');
+    }

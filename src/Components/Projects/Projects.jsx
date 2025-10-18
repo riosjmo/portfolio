@@ -1,31 +1,37 @@
-import './Projects.css';
+import "./Projects.css";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Project One",
-      description: "A brief description of your first project. Explain what it does and what technologies you used.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      liveUrl: "https://your-project-live-url.com",
-      githubUrl: "https://github.com/yourusername/project-one",
-      image: "/path-to-project-image.jpg"
+      title: "E-Commerce Platform",
+      description:
+        "A full-stack e-commerce solution with user authentication, product management, and secure payment processing. Built with modern web technologies for optimal performance.",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      liveUrl: "#",
+      githubUrl: "#",
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
     },
     {
-      title: "Project Two", 
-      description: "Description of your second project. Highlight the key features and your role in the development.",
-      technologies: ["Vue.js", "Express.js", "PostgreSQL"],
-      liveUrl: "https://your-project-live-url.com",
-      githubUrl: "https://github.com/yourusername/project-two",
-      image: "/path-to-project-image.jpg"
+      title: "Task Management App",
+      description:
+        "A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface for enhanced productivity.",
+      technologies: ["Vue.js", "Express.js", "Socket.io", "PostgreSQL"],
+      liveUrl: "#",
+      githubUrl: "#",
+      image:
+        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
     },
     {
-      title: "Project Three",
-      description: "Your third project description. Mention any challenges you overcame and what you learned.",
-      technologies: ["Python", "Django", "React"],
-      liveUrl: "https://your-project-live-url.com", 
-      githubUrl: "https://github.com/yourusername/project-three",
-      image: "/path-to-project-image.jpg"
-    }
+      title: "Weather Dashboard",
+      description:
+        "An interactive weather dashboard providing real-time weather data, forecasts, and beautiful visualizations. Features location-based services and responsive design.",
+      technologies: ["React", "Weather API", "Chart.js", "CSS3"],
+      liveUrl: "#",
+      githubUrl: "#",
+      image:
+        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
+    },
   ];
 
   return (
@@ -49,10 +55,20 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
                     Live Demo
                   </a>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary"
+                  >
                     View Code
                   </a>
                 </div>
