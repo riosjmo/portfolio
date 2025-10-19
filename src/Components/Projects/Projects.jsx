@@ -3,41 +3,53 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Churro (Recipe Explorer)",
       description:
-        "A full-stack e-commerce solution with user authentication, product management, and secure payment processing. Built with modern web technologies for optimal performance.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A full-stack recipe discovery platform that connects food enthusiasts with thousands of recipes from around the world.",
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ],
+      liveUrl: "https://churro.jumpingcrab.com/",
+      githubUrl: "https://github.com/riosjmo/recipe_explorer_backend",
       image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
+        "https://i.postimg.cc/1zdmR2n6/churro-search.png",
     },
     {
-      title: "Task Management App",
+      title: "WTWR (What to Wear)",
       description:
-        "A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface for enhanced productivity.",
-      technologies: ["Vue.js", "Express.js", "Socket.io", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "A weather-based clothing recommendation app that fetches real-time weather data and suggests custom appropriate clothing.",
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+      ],
+      liveUrl: "https://riowtwr.jumpingcrab.com/",
+      githubUrl: "https://github.com/riosjmo/se_project_express",
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
+        "https://i.postimg.cc/qRdJSYNs/wtwr-home.png",
     },
     {
-      title: "Weather Dashboard",
+      title: "Spots (Social Media App)",
       description:
-        "An interactive weather dashboard providing real-time weather data, forecasts, and beautiful visualizations. Features location-based services and responsive design.",
-      technologies: ["React", "Weather API", "Chart.js", "CSS3"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "An interactive social media application that allows users to create their own profile, and post new photos.",
+      technologies: ["React", "JavaScript", "CSS3"],
+      liveUrl: "https://riosjmo.github.io/se_project_spots/",
+      githubUrl: "https://github.com/riosjmo/se_project_spots",
       image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop",
+        "https://i.postimg.cc/MG1x7D9v/spots-img.png",
     },
   ];
 
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2>Featured Projects</h2>
+        <h2 className="projects__title">Featured Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
@@ -45,8 +57,10 @@ const Projects = () => {
                 <img src={project.image} alt={project.title} />
               </div>
               <div className="project-content">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <h3 className="project__card-title">{project.title}</h3>
+                <p className="project__card-description">
+                  {project.description}
+                </p>
                 <div className="project-technologies">
                   {project.technologies.map((tech, techIndex) => (
                     <span key={techIndex} className="tech-tag">
@@ -61,7 +75,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="btn-primary"
                   >
-                    Live Demo
+                    Project Link
                   </a>
                   <a
                     href={project.githubUrl}

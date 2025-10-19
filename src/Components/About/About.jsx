@@ -12,11 +12,11 @@ const About = () => {
               experience building and deploying production-grade applications. I
               specialize in creating scalable backends and responsive frontends
               that combine clean design, security, and functionality. My journey started in high school, where I developed a passion for coding and problem-solving,
-              which led me to pursue a career in software development. I then further honed my skills through Tripleten Academy's intensive full-stack program, and created 4+
-              full-stack projects as part of my training.
+              which led me to pursue a career in software development. I then further honed my skills through Tripleten Academy's intensive full-stack program, and have created
+              multiple full-stack projects since.
             </p>
             <p className="about__text-2">
-              I've delivered real-world projects using JavaScript, Node.js,
+              I've delivered those real-world projects using JavaScript, Node.js,
               Express, MongoDB, and React, and deployed them on Google Cloud
               with Nginx and SSL/TLS. My experience spans the full development
               cycle — from API design and authentication to UI development and
