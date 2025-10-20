@@ -84,7 +84,7 @@
   right: calc(6% + 97px);
   left: auto;
   transform: rotate(-8deg);
-  animation: rope-drop-star-left 4s ease-out 1s forwards;
+  animation: rope-drop-star-left 2.6s ease-out 1.3s forwards;
 }
 
 /* Right rope for star */
@@ -92,7 +92,7 @@
   right: calc(6% + 24px);
   left: auto;
   transform: rotate(8deg);
-  animation: rope-drop-star-right 4s ease-out 1s forwards;
+  animation: rope-drop-star-right 2.68s ease-out 1.3s forwards;
 }
 
 /* ========================================
@@ -196,7 +196,7 @@
     transform: rotate(2deg) scale(1);
   }
   75% {
-    top: calc(55vh + 80px + 15px); /* Slightly past final position */
+    top: calc(55vh + 80px + 11px); /* Slightly past final position */
     transform: rotate(2deg) scale(1.05);
   }
   100% {
