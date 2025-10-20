@@ -1,4 +1,3 @@
-/* Contact Section */
 .contact {
   padding: 5rem 0;
   color: white;
@@ -14,7 +13,6 @@
   width: 100%;
 }
 
-/* Section Title */
 .contact-title {
   font-size: 45px;
   margin-bottom: 3rem;
@@ -31,7 +29,6 @@
   align-items: start;
 }
 
-/* Contact Info Section */
 .contact-info {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
@@ -55,7 +52,6 @@
   font-family: "Enwallowify Regular", sans-serif;
 }
 
-/* Contact Details */
 .contact-details {
   margin-bottom: 44.76px;
 }
@@ -90,7 +86,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Social Links */
 .social-links {
   display: flex;
   gap: 1.5rem;
@@ -114,7 +109,6 @@
   transform: translateY(-2px);
 }
 
-/* Contact Form */
 .contact-form {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.05);
@@ -130,7 +124,6 @@
   gap: 1rem;
 }
 
-/* Form Groups */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -173,7 +166,6 @@
   min-height: 80px;
 }
 
-/* Submit Button */
 .btn-primary {
   padding: 0.8rem 2rem;
   background: #dcc1f8;
@@ -204,7 +196,6 @@
   transform: none;
 }
 
-/* Submit Status Messages */
 .submit-message {
   margin-top: 1rem;
   padding: 1rem;

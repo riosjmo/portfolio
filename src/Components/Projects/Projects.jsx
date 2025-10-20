@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: "Spots (Social Media App)",
       description:
-        "An interactive social media application that allows users to create their own profile, and post new photos.",
+        "An interactive social media application that allows users to create their own profile, and post new photos. (DISCLAIMER: CHANGES MADE WILL SHOW FOR EVERYONE)",
       technologies: ["React", "JavaScript", "CSS3"],
       liveUrl: "https://riosjmo.github.io/se_project_spots/",
       githubUrl: "https://github.com/riosjmo/se_project_spots",

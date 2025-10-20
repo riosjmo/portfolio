@@ -1,4 +1,3 @@
-/* ===== Navigation Bar ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -23,7 +22,6 @@
   color: rgb(221, 128, 224);
 }
 
-/* ===== Circular Menu ===== */
 .circular-menu {
   position: fixed;
   top: 0;
@@ -34,7 +32,6 @@
   z-index: 1000;
 }
 
-/* ===== Toggle Button ===== */
 .menu-toggle {
   position: absolute;
   top: 20px;
@@ -89,7 +86,6 @@
   filter: brightness(0) invert(1);
 }
 
-/* ===== Layers ===== */
 .circle-layer {
   position: absolute;
   top: 0;
@@ -144,13 +140,12 @@
     inset 0 2px 4px rgba(255, 255, 255, 0.05);
 }
 
-/* ===== Active State ===== */
+/* Active state */
 .circular-menu.active .circle-layer {
   transform: scale(1);
   opacity: 0.95;
 }
 
-/* ===== Menu Items ===== */
 .menu-item {
   position: absolute;
   color: white;
@@ -171,7 +166,7 @@
   opacity: 1;
 }
 
-/* ===== Positioning Text Along Arc ===== */
+/* Positioning text along arc */
 .layer-1 .menu-item {
   top: 82px;
   right: 62px;
@@ -203,7 +198,7 @@
   font-size: 18px;
 }
 
-/* ===== Hover Effects for Each Layer ===== */
+/* Hover effects for each layer */
 .layer-1 .menu-item:hover {
   transform: rotate(25deg) scale(1.1);
   color: #fffbf8;

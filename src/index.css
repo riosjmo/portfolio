@@ -1,12 +1,9 @@
-/* fonts */
 @import "D:\projects\portfolio\src\vendor\fonts\style.css"; 
 
-/* Global smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Reset margins and padding */
 * {
   margin: 0;
   padding: 0;
