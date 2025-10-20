@@ -5,12 +5,14 @@ import Skills from "../Skills/Skills";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
+import SocialSidebar from "../SocialSidebar/SocialSidebar";
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
       <Header />
+      <SocialSidebar />
 
       {/* Hero Section - Home */}
       <section id="home">

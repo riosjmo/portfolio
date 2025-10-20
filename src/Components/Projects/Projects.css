@@ -7,14 +7,14 @@
 .projects .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 32px;
 }
 
 .projects__title {
   text-align: center;
   font-family: "Enwallowify Regular", sans-serif;
   font-size: 45px;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
   color: #dcc1f8;
   font-weight: bold;
 }
@@ -24,7 +24,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 3rem;
+  gap: 48px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -102,7 +102,7 @@
 /* Project Content (Bottom Half) */
 .project-content {
   height: 54%;
-  padding: 1.5rem;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,16 +110,16 @@
 }
 
 .project-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 24px;
+  margin-bottom: 8px;
   color: rgb(221, 128, 224);
   font-weight: bold;
 }
 
 .project-content p {
-  font-size: 0.9rem;
+  font-size: 14.4px;
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   opacity: 0.9;
   flex-grow: 1;
 }
@@ -128,16 +128,16 @@
 .project-technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
 .tech-tag {
   background: rgba(221, 128, 224, 0.2);
   color: rgb(221, 128, 224);
-  padding: 0.25rem 0.75rem;
+  padding: 4px 12px;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 12.8px;
   font-weight: 500;
   border: 1px solid rgba(221, 128, 224, 0.3);
 }
@@ -145,36 +145,41 @@
 /* Project Links */
 .project-links {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .btn-primary,
 .btn-secondary {
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border-radius: 8px;
+  margin: 0;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 14.4px;
   transition: all 0.3s ease;
   text-align: center;
   flex: 1;
   font-family: "Enwallowify Regular", sans-serif;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .btn-primary {
   background: rgb(221, 128, 224);
   color: white;
+  border-color: rgb(221, 128, 224);
 }
 
 .btn-primary:hover {
   background: rgb(200, 100, 200);
+  border-color: rgb(200, 100, 200);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
   color: rgb(221, 128, 224);
-  border: 2px solid rgb(221, 128, 224);
+  border-color: rgb(221, 128, 224);
 }
 
 .btn-secondary:hover {
@@ -187,7 +192,7 @@
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 32px;
     max-width: 350px;
   }
 
@@ -197,7 +202,7 @@
   }
 
   .projects h2 {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 
   .project-card {
@@ -205,6 +210,6 @@
   }
 
   .project-content {
-    padding: 1.25rem;
+    padding: 20px;
   }
 }
