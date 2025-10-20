@@ -40,7 +40,7 @@
 .rope-left {
   left: calc(6% + 50px);
   transform: rotate(1.5deg);
-  animation: rope-drop-left 2.9s ease-out 1.13s forwards;
+  animation: rope-drop-left 2.85s ease-out 1.18s forwards;
 }
 
 /* Right rope for moon */
@@ -131,7 +131,7 @@
     transform: rotate(1.5deg);
   }
   100% {
-    height: calc(55vh + 80px + 59px);
+    height: calc(55vh + 80px + 60px);
     transform: rotate(1.5deg);
   }
 }
@@ -180,7 +180,7 @@
     transform: rotate(-2deg) scale(1);
   }
   70% {
-    top: calc(55vh + 80px + 15px); /* Slightly past final position */
+    top: calc(55vh + 80px + 11px); /* Slightly past final position */
     transform: rotate(-2deg) scale(1.05);
   }
   100% {
