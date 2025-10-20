@@ -1,4 +1,6 @@
-/* Hero Section */
+/* ========================================
+   HERO SECTION - MAIN CONTAINER
+======================================== */
 .hero {
   height: 100vh;
   display: flex;
@@ -8,7 +10,9 @@
   overflow: hidden;
 }
 
-/* Theatre Decoration */
+/* ========================================
+   THEATRE DECORATION CONTAINER
+======================================== */
 .theatre-decoration {
   position: fixed;
   top: 0;
@@ -19,38 +23,49 @@
   z-index: 1;
 }
 
+/* ========================================
+   ROPE STYLES - LEFT SIDE (MOON)
+======================================== */
 .rope {
   position: absolute;
   width: 3px;
-  height: calc(55vh + 80px + 60px);
+  height: 0; /* Start with no height */
   top: 0;
   object-fit: cover;
   opacity: 0.8;
   transform-origin: top center;
 }
 
+/* Left rope for moon */
 .rope-left {
   left: calc(6% + 50px);
   transform: rotate(1.5deg);
+  animation: rope-drop-left 2.9s ease-out 1.13s forwards;
 }
 
+/* Right rope for moon */
 .rope-right {
   left: calc(6% + 80px);
   transform: rotate(-4deg);
-  height: calc(55vh + 80px + 112px);
+  animation: rope-drop-right 2.6s ease-out 1.2s forwards;
 }
 
+/* ========================================
+   HANGING MOON - LEFT SIDE
+======================================== */
 .hanging-moon {
   position: absolute;
   width: 140px;
   height: 140px;
   left: 7%;
-  top: calc(55vh + 80px + 10px);
+  top: -200px; /* Start above viewport */
   object-fit: contain;
   filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
-  animation: gentle-sway 4s ease-in-out infinite;
+  animation: moon-drop 4s ease-out 1s forwards,
+    gentle-sway 4s ease-in-out infinite 5s;
 }
 
+/* Moon gentle swaying animation */
 @keyframes gentle-sway {
   0%,
   100% {
@@ -61,32 +76,41 @@
   }
 }
 
-/* Right side star decoration */
+/* ========================================
+   ROPE STYLES - RIGHT SIDE (STAR)
+======================================== */
+/* Left rope for star */
 .rope-star-left {
   right: calc(6% + 97px);
   left: auto;
   transform: rotate(-8deg);
-  height: calc(55vh + 80px + 67px);
+  animation: rope-drop-star-left 4s ease-out 1s forwards;
 }
 
+/* Right rope for star */
 .rope-star-right {
   right: calc(6% + 24px);
   left: auto;
   transform: rotate(8deg);
-  height: calc(55vh + 80px + 74px);
+  animation: rope-drop-star-right 4s ease-out 1s forwards;
 }
 
+/* ========================================
+   HANGING STAR - RIGHT SIDE
+======================================== */
 .hanging-star {
   position: absolute;
   width: 130px;
   height: 130px;
   right: 5.8%;
-  top: calc(55vh + 80px + 10px);
+  top: -200px; /* Start above viewport */
   object-fit: contain;
   filter: drop-shadow(0 0 15px rgba(255, 255, 0, 0.4));
-  animation: gentle-sway-reverse 4.5s ease-in-out infinite;
+  animation: star-drop 4s ease-out 1s forwards,
+    gentle-sway-reverse 4.5s ease-in-out infinite 5s;
 }
 
+/* Star gentle swaying animation (reverse direction) */
 @keyframes gentle-sway-reverse {
   0%,
   100% {
@@ -97,6 +121,93 @@
   }
 }
 
+/* ========================================
+   THEATRE DROP ANIMATIONS - ROPES
+======================================== */
+/* Moon rope animations */
+@keyframes rope-drop-left {
+  0% {
+    height: 0;
+    transform: rotate(1.5deg);
+  }
+  100% {
+    height: calc(55vh + 80px + 59px);
+    transform: rotate(1.5deg);
+  }
+}
+
+@keyframes rope-drop-right {
+  0% {
+    height: 0;
+    transform: rotate(-4deg);
+  }
+  100% {
+    height: calc(55vh + 80px + 117.9px);
+    transform: rotate(-4deg);
+  }
+}
+
+/* Star rope animations */
+@keyframes rope-drop-star-left {
+  0% {
+    height: 0;
+    transform: rotate(-8deg);
+  }
+  100% {
+    height: calc(55vh + 80px + 67px);
+    transform: rotate(-8deg);
+  }
+}
+
+@keyframes rope-drop-star-right {
+  0% {
+    height: 0;
+    transform: rotate(8deg);
+  }
+  100% {
+    height: calc(55vh + 80px + 74px);
+    transform: rotate(8deg);
+  }
+}
+
+/* ========================================
+   THEATRE DROP ANIMATIONS - PROPS
+======================================== */
+/* Moon drop animation with bounce effect */
+@keyframes moon-drop {
+  0% {
+    top: -200px;
+    transform: rotate(-2deg) scale(1);
+  }
+  70% {
+    top: calc(55vh + 80px + 15px); /* Slightly past final position */
+    transform: rotate(-2deg) scale(1.05);
+  }
+  100% {
+    top: calc(55vh + 80px + 10px); /* Final resting position */
+    transform: rotate(-2deg) scale(1);
+  }
+}
+
+/* Star drop animation with bounce effect */
+@keyframes star-drop {
+  0% {
+    top: -200px;
+    transform: rotate(2deg) scale(1);
+  }
+  75% {
+    top: calc(55vh + 80px + 15px); /* Slightly past final position */
+    transform: rotate(2deg) scale(1.05);
+  }
+  100% {
+    top: calc(55vh + 80px + 10px); /* Final resting position */
+    transform: rotate(2deg) scale(1);
+  }
+}
+
+/* ========================================
+   HERO MAIN CONTENT AREA
+======================================== */
 .hero-content {
   display: flex;
   align-items: center;
@@ -108,6 +219,9 @@
   z-index: 2;
 }
 
+/* ========================================
+   HERO IMAGE SECTION
+======================================== */
 .hero__image {
   flex-shrink: 0;
 }
@@ -123,11 +237,15 @@
   bottom: 100px;
 }
 
+/* ========================================
+   HERO TEXT SECTION
+======================================== */
 .hero__text {
   flex: 1;
   text-align: left;
 }
 
+/* Main title styling */
 .hero__title {
   font-size: 100px;
   margin-bottom: 1rem;
@@ -141,6 +259,7 @@
   display: block;
 }
 
+/* Subtitle styling */
 .hero__subtitle {
   font-size: 35px;
   margin-bottom: 2rem;
@@ -152,11 +271,15 @@
   font-family: "Bariol Bold", Arial, sans-serif;
 }
 
+/* Content paragraph styling */
 .hero__content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
+/* ========================================
+   CALL-TO-ACTION BUTTON
+======================================== */
 .cta-button {
   display: inline-block;
   padding: 1rem 2rem;

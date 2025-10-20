@@ -10,36 +10,36 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <SocialSidebar />
+      <div className="app">
+        <Header />
+        <SocialSidebar />
 
-      {/* Hero Section - Home */}
-      <section id="home">
-        <Hero />
-      </section>
-
-      {/* Main Content Sections */}
-      <main>
-        <section id="about">
-          <About />
+        {/* Hero Section - Home */}
+        <section id="home">
+          <Hero />
         </section>
 
-        <section id="skills">
-          <Skills />
-        </section>
+        {/* Main Content Sections */}
+        <main>
+          <section id="about">
+            <About />
+          </section>
 
-        <section id="projects">
-          <Projects />
-        </section>
+          <section id="skills">
+            <Skills />
+          </section>
 
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+          <section id="projects">
+            <Projects />
+          </section>
 
-      <Footer />
-    </div>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+
+        <Footer />
+      </div>
   );
 }
 
