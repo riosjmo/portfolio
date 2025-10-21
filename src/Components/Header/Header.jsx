@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
+import moreIcon from "../../assets/more.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +55,7 @@ const Header = () => {
       <div className={`circular-menu ${isMenuOpen ? "active" : ""}`}>
         {/* Menu Button */}
         <button className={`menu-toggle ${spinClass}`} onClick={toggleMenu}>
-          <img src="/src/assets/more.png" alt="Menu" />
+          <img src={moreIcon} alt="Menu" />
         </button>
 
         {/* Layered Circles with individual text - Largest to Smallest */}
