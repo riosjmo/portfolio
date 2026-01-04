@@ -35,14 +35,14 @@ const Projects = () => {
         "https://i.postimg.cc/qRdJSYNs/wtwr-home.png",
     },
     {
-      title: "Spots (Social Media App)",
+      title: "Employee Ticketing App",
       description:
-        "An interactive social media application that allows users to create their own profile, and post new photos. (DISCLAIMER: CHANGES MADE WILL SHOW FOR EVERYONE)",
-      technologies: ["React", "JavaScript", "CSS3"],
-      liveUrl: "https://riosjmo.github.io/se_project_spots/",
-      githubUrl: "https://github.com/riosjmo/se_project_spots",
+        "A full-stack employee ticketing system built with React, TypeScript, Node.js, and PostgreSQL, featuring authentication, role-aware ticket management, and a structured backend architecture.",
+      technologies: ["React", "TypeScript", "PostgreSQL"],
+      liveUrl: "https://github.com/riosjmo/employee-ticketing-system",
+      githubUrl: "https://github.com/riosjmo/employee-ticketing-system",
       image:
-        "https://i.postimg.cc/MG1x7D9v/spots-img.png",
+        "https://i.postimg.cc/mrH721Wf/employee-ticketing-home.png",
     },
   ];
 
