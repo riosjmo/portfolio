@@ -4,7 +4,7 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Frontend",
-      skills: ["React, ", "JavaScript, ", "HTML5, ", "CSS3, ", "TypeScript, ", "Vue.js, ", "Responsive UI/UX"]
+      skills: ["React, ", "JavaScript, ", "HTML5, ", "CSS3, ", "TypeScript, ", "Vue.js, ", "Responsive UI/UX, ", "Vite, ", "JSX, ", "Styled Components, ", "Accessibility"]
     },
     {
       category: "Backend",
@@ -12,11 +12,11 @@ const Skills = () => {
     },
     {
       category: "Database",
-      skills: ["MongoDB, ", "Mongoose"]
+      skills: ["MongoDB, ", "Mongoose, ", " PostgreSQL, ", "Prisma ORM"]
     },
     {
       category: "Tools & Deployment",
-      skills: ["Webpack, ", "Git/GitHub, ", "Docker basics, ", "Google Cloud Platform, ", "Nginx, ", "CI/CD"]
+      skills: ["Webpack, ", "Git/GitHub, ", "Docker, ", "Google Cloud Platform, ", "Nginx, ", "CI/CD, ", "Postman"]
     }
   ];
 
