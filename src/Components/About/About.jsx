@@ -8,29 +8,38 @@ const About = () => {
         <div className="about__content">
           <div className="about__text">
             <p className="about__text-1">
-              Hi, I'm Rio! I'm a full-stack software engineer with hands-on
-              experience building and deploying production-grade applications. I
-              specialize in creating scalable backends and responsive frontends
-              that combine clean design, security, and functionality. My journey started in high school, where I developed a passion for coding and problem-solving,
-              which led me to pursue a career in software development. I then further honed my skills through Tripleten Academy's intensive full-stack program, and have created
-              multiple full-stack projects since.
+              Hi, I’m Rio! I’m a full-stack software engineer with hands-on
+              experience building and deploying production-ready applications. I
+              specialize in scalable backend systems and responsive frontend
+              experiences, with experience using JavaScript, TypeScript,
+              Node.js, Express, React, MongoDB, PostgreSQL, Prisma, and cloud
+              deployment technologies including Google Cloud, Nginx, and
+              SSL/TLS.
             </p>
             <p className="about__text-2">
-              I've delivered those real-world projects using JavaScript, Node.js,
-              Express, MongoDB, and React, and deployed them on Google Cloud
-              with Nginx and SSL/TLS. My experience spans the full development
-              cycle — from API design and authentication to UI development and
-              cloud deployment.
+              My passion for software development started in high school and
+              later grew through TripleTen Academy’s intensive full-stack
+              software engineering program. Since then, I’ve continued building
+              full-stack projects while strengthening my understanding of APIs,
+              authentication, backend architecture, and system design. Most
+              recently, I served as Lead Developer during a software engineering
+              externship, where I worked on a cross-functional team building a
+              production-style file upload platform and co-leading the final
+              stakeholder presentation communicating technical decisions and
+              delivered outcomes.
             </p>
             <div className="about-details">
               <div className="about__location">
-                <strong className="about__location-title">Location:</strong> Austin, TX
+                <strong className="about__location-title">Location:</strong>{" "}
+                Austin, TX
               </div>
               <div className="about__education">
-                <strong className="about__education-title">Education:</strong> Tripleten Academy
+                <strong className="about__education-title">Education:</strong>{" "}
+                Tripleten Academy
               </div>
               <div className="about__experience">
-                <strong className="about__experience-title">Experience:</strong> 2 years
+                <strong className="about__experience-title">Experience:</strong>{" "}
+                2 years
               </div>
             </div>
           </div>
