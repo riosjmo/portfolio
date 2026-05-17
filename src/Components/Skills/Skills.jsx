@@ -1,23 +1,40 @@
-import './Skills.css';
+import "./Skills.css";
 
 const Skills = () => {
   const skillCategories = [
     {
       category: "Frontend",
-      skills: ["React, ", "JavaScript, ", "HTML5, ", "CSS3, ", "TypeScript, ", "Vue.js, ", "Responsive UI/UX, ", "Vite, ", "JSX, ", "Styled Components, ", "Accessibility"]
+      skills: [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "Vite",
+        "JSX",
+        "Styled Components",
+        "Responsive UI",
+        "Accessibility",
+      ],
     },
     {
       category: "Backend",
-      skills: ["Node.js, ", "Express.js, ", "Authentication, ", "REST APIs, ", "GraphQL, ", "Error Handling, ", "Microservices"]
+      skills: ["Node.js", "Express", "REST APIs", "MVC / Layered Architecture"],
     },
     {
-      category: "Database",
-      skills: ["MongoDB, ", "Mongoose, ", " PostgreSQL, ", "Prisma ORM"]
+      category: "Databases",
+      skills: ["PostgreSQL", "Prisma ORM", "MongoDB", "Mongoose"],
     },
     {
-      category: "Tools & Deployment",
-      skills: ["Webpack, ", "Git/GitHub, ", "Docker, ", "Google Cloud Platform, ", "Nginx, ", "CI/CD, ", "Postman"]
-    }
+      category: "Auth & Security",
+      skills: ["JWT (Access & Refresh Tokens)", "bcrypt"],
+    },
+    {
+      category: "Infrastructure / DevOps",
+      skills: ["Docker", "Redis", "NGINX", "PM2"],
+    },
+    {
+      category: "Tooling",
+      skills: ["Git", "GitHub", "Postman", "API Testing", "Documentation"],
+    },
   ];
 
   return (
@@ -32,6 +49,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span key={skillIndex} className="skill-tag">
                     {skill}
+                    {skillIndex < category.skills.length - 1 ? ", " : ""}
                   </span>
                 ))}
               </div>
